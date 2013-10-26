@@ -23,4 +23,3 @@ insert(X, [Y | Tail]) when X =< Y -> [X, Y | Tail];
 insert(X, [Y | Tail]) -> [Y | insert(X, Tail)];
 
 insert(X, []) -> [X].
-
